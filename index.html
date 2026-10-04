@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy & Terms — UNO No Marcy Score Tracker</title>
+  <style>
+    :root {
+      --bg-void: #05060b;
+      --bg-surface: #0f111d;
+      --neon-red: #ff0044;
+      --neon-yellow: #ffc400;
+      --neon-green: #00ff88;
+      --neon-cyan: #00e5ff;
+      --text-white: #ffffff;
+      --text-muted: #c9cee2;
+      --text-dim: #7f86a8;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-void);
+      background-image:
+        radial-gradient(circle at 15% 10%, rgba(255, 0, 68, 0.14) 0%, transparent 40%),
+        radial-gradient(circle at 85% 15%, rgba(0, 229, 255, 0.12) 0%, transparent 45%);
+      color: var(--text-white);
+      line-height: 1.65;
+      padding: 28px 16px 60px;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .header-card {
+      background: linear-gradient(145deg, rgba(28, 32, 56, 0.92), rgba(12, 14, 26, 0.96));
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 22px;
+      padding: 28px 24px;
+      text-align: center;
+      margin-bottom: 24px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+    }
+
+    .app-badge {
+      display: inline-block;
+      background: rgba(255, 196, 0, 0.14);
+      border: 1px solid rgba(255, 196, 0, 0.4);
+      color: var(--neon-yellow);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      padding: 5px 14px;
+      border-radius: 999px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      font-weight: 900;
+      color: #ffffff;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    .nav-tabs {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .nav-tabs a {
+      text-decoration: none;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 12px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      transition: all 0.2s ease;
+    }
+
+    .nav-tabs a:hover {
+      border-color: var(--neon-cyan);
+      color: var(--neon-cyan);
+    }
+
+    .section-divider {
+      margin: 36px 0 18px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid rgba(255, 196, 0, 0.35);
+      font-size: 1.35rem;
+      font-weight: 900;
+      color: var(--neon-yellow);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+    }
+
+    .card {
+      background: linear-gradient(150deg, rgba(22, 25, 42, 0.88), rgba(11, 13, 24, 0.95));
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      border-radius: 18px;
+      padding: 22px 20px;
+      margin-bottom: 16px;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.65);
+    }
+
+    .card h2 {
+      font-size: 1rem;
+      font-weight: 850;
+      color: #ffffff;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .num-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      border-radius: 8px;
+      background: rgba(255, 196, 0, 0.18);
+      border: 1px solid rgba(255, 196, 0, 0.45);
+      color: var(--neon-yellow);
+      font-size: 0.82rem;
+      font-weight: 900;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.94rem;
+      margin-bottom: 10px;
+    }
+
+    .card p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul.bullet-list {
+      list-style: none;
+      margin: 12px 0;
+      display: grid;
+      gap: 8px;
+    }
+
+    ul.bullet-list li {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 9px 14px;
+      border-radius: 10px;
+      color: #ffffff;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .contact-box {
+      background: linear-gradient(145deg, rgba(28, 24, 46, 0.92), rgba(12, 13, 24, 0.96));
+      border: 1px solid rgba(255, 215, 0, 0.4);
+      border-radius: 18px;
+      padding: 22px 20px;
+      margin-bottom: 20px;
+    }
+
+    .email-link {
+      display: inline-block;
+      margin-top: 8px;
+      background: rgba(0, 229, 255, 0.12);
+      border: 1px solid rgba(0, 229, 255, 0.35);
+      color: var(--neon-cyan);
+      padding: 8px 14px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 0.9rem;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      color: var(--text-dim);
+      font-size: 0.84rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header-card">
+      <div class="app-badge">Official Legal &amp; Privacy Page</div>
+      <h1>UNO No Marcy Score Tracker</h1>
+      <p class="subtitle">A simple, fast, privacy-focused score tracking application for UNO No Mercy players and tabletop gaming groups.</p>
+      <div class="nav-tabs">
+        <a href="#privacy-policy">Privacy Policy</a>
+        <a href="#terms-of-service">Terms of Service</a>
+        <a href="#about-us">About Us</a>
+      </div>
+    </header>
+
+    <!-- ==========================================
+         PRIVACY POLICY
+         ========================================== -->
+    <div id="privacy-policy" class="section-divider">PRIVACY POLICY</div>
+
+    <div class="card">
+      <p>This Privacy Policy explains how UNO No Marcy Score Tracker handles information when you use the application.</p>
+      <p>The application is designed with a local-first approach for its core score-tracking functionality.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">1</span> SECTION 1 — INFORMATION YOU ENTER</h2>
+      <p>The application may allow you to enter information such as:</p>
+      <ul class="bullet-list">
+        <li>• Player names</li>
+        <li>• Match numbers</li>
+        <li>• Match scores</li>
+        <li>• Player positions</li>
+        <li>• Match dates</li>
+        <li>• Other information required for score tracking</li>
+      </ul>
+      <p>This information is entered by the user for the purpose of using the application's score-tracking features.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">2</span> SECTION 2 — LOCAL STORAGE</h2>
+      <p>For the core score-tracking functionality, the information you enter is stored locally on the device or application storage used by your copy of the application.</p>
+      <p>The application does not require a user account or registration to use the core score-tracking features.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">3</span> SECTION 3 — NO ACCOUNT REQUIRED</h2>
+      <p>You do not need to create an account or provide personal registration information to use the core score-tracking functionality.</p>
+      <p>The application is designed to work independently on the user's device.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">4</span> SECTION 4 — NO REMOTE DATABASE FOR CORE SCORE DATA</h2>
+      <p>The core match and score-tracking information is not designed to be stored in a remote database or shared automatically with other users.</p>
+      <p>Each copy of the application maintains its own locally stored score data.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">5</span> SECTION 5 — DATA ISOLATION</h2>
+      <p>Data stored in one user's copy of the application is separate from data stored in another user's copy.</p>
+      <p>Sharing the application file or application link does not automatically transfer or share the original user's locally stored match data.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">6</span> SECTION 6 — INTERNET REQUIREMENT</h2>
+      <p>The core score-tracking functionality is designed to work without requiring an internet connection.</p>
+      <p>Certain future or optional application components may have different technical requirements, but the core local score-tracking system is designed around local storage.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">7</span> SECTION 7 — DATA DELETION</h2>
+      <p>Users can delete their locally stored score information using the application's available data-clearing options.</p>
+      <p>The Clear Today feature can be used to clear applicable daily information.</p>
+      <p>The Clear All Data feature is intended to permanently remove the application's saved score and match data from the local storage used by that copy of the application.</p>
+      <p>Once local data is deleted, it may not be recoverable.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">8</span> SECTION 8 — DEVICE AND STORAGE LIMITATIONS</h2>
+      <p>Because the core score data is stored locally, the availability of that data depends on the device, browser, WebView or application storage environment.</p>
+      <p>Clearing storage, uninstalling the application, resetting the device, changing storage settings or other system-level actions may remove saved information.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">9</span> SECTION 9 — DATA SECURITY</h2>
+      <p>The application uses local storage for its core score-tracking data. However, no digital storage method can be guaranteed to be completely secure.</p>
+      <p>Users should avoid entering highly sensitive or confidential information into the application.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">10</span> SECTION 10 — CHILDREN AND PERSONAL INFORMATION</h2>
+      <p>The application is designed primarily as a recreational score-tracking tool.</p>
+      <p>Users should avoid entering unnecessary personal, sensitive or confidential information into player names or other fields.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">11</span> SECTION 11 — CHANGES TO THIS PRIVACY POLICY</h2>
+      <p>This Privacy Policy may be updated from time to time to reflect changes to the application or its functionality.</p>
+      <p>The latest version available within the application should be considered the current Privacy Policy.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2><span class="num-badge">12</span> SECTION 12 — CONTACT</h2>
+      <p>If you have any questions, concerns or feedback regarding this Privacy Policy, please contact:</p>
+      <p style="color:#fff; font-weight:800; font-size:1.05rem; margin-top:6px;">Mohammad Shahzad Maruf</p>
+      <a class="email-link" href="mailto:mohammadshahzadmaruf@gmail.com">mohammadshahzadmaruf@gmail.com</a>
+    </div>
+
+    <!-- ==========================================
+         TERMS OF SERVICE
+         ========================================== -->
+    <div id="terms-of-service" class="section-divider">TERMS OF SERVICE</div>
+
+    <div class="card">
+      <p>These Terms of Service explain the basic rules and conditions for using UNO No Marcy Score Tracker. By using the application, you acknowledge that you understand and agree to these terms.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">1</span> SECTION 1 — ACCEPTANCE OF TERMS</h2>
+      <p>By accessing or using UNO No Marcy Score Tracker, you agree to use the application responsibly and in accordance with these Terms of Service.</p>
+      <p>If you do not agree with these terms, you should discontinue use of the application.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">2</span> SECTION 2 — PURPOSE OF THE APPLICATION</h2>
+      <p>UNO No Marcy Score Tracker is designed as a recreational score-tracking and match-recording tool for UNO No Mercy games and similar tabletop gaming activities.</p>
+      <p>The application is intended to help users record scores, calculate positions, review match history and monitor performance over time.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">3</span> SECTION 3 — USER-ENTERED DATA</h2>
+      <p>Users may enter information such as player names, match numbers, points and other information required for score tracking.</p>
+      <p>Users are responsible for ensuring that the information they enter is accurate and appropriate.</p>
+      <p>The application does not guarantee that manually entered information will always be correct.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">4</span> SECTION 4 — LOCAL STORAGE</h2>
+      <p>The core score-tracking data is stored locally within the browser, WebView or application storage used by the user's device.</p>
+      <p>The application does not require a user account or remote database for the core score-tracking functionality.</p>
+      <p>Because the data is stored locally, uninstalling the application, clearing application/browser storage, resetting the device or deleting stored data may permanently remove saved match information.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">5</span> SECTION 5 — DATA LOSS RESPONSIBILITY</h2>
+      <p>Users are responsible for maintaining their own backup of any information that is important to them.</p>
+      <p>The application creator cannot guarantee recovery of locally stored data after accidental deletion, device failure, application removal, storage clearing or other circumstances that result in loss of local data.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">6</span> SECTION 6 — APPLICATION AVAILABILITY</h2>
+      <p>While reasonable efforts may be made to keep the application functional and reliable, uninterrupted availability is not guaranteed.</p>
+      <p>The application may require updates, maintenance, compatibility changes or other modifications in the future.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">7</span> SECTION 7 — PROHIBITED USE</h2>
+      <p>Users should not use the application for unlawful, harmful, fraudulent or abusive purposes.</p>
+      <p>Users should not attempt to intentionally damage, disrupt, reverse engineer, exploit or interfere with the normal operation of the application.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">8</span> SECTION 8 — NO WARRANTY</h2>
+      <p>The application is provided on an 'as is' and 'as available' basis.</p>
+      <p>To the extent permitted by applicable law, no guarantee is made that the application will always be completely error-free, uninterrupted or suitable for every individual purpose.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">9</span> SECTION 9 — CHANGES TO THE APPLICATION</h2>
+      <p>The application may be updated or modified from time to time.</p>
+      <p>Features, interface elements, functionality or other parts of the application may change in future versions.</p>
+    </div>
+
+    <div class="card">
+      <h2><span class="num-badge">10</span> SECTION 10 — CHANGES TO THESE TERMS</h2>
+      <p>These Terms of Service may be updated when necessary.</p>
+      <p>Any updated version may replace the previous version and will apply from the time it is made available within the application.</p>
+    </div>
+
+    <div class="contact-box">
+      <h2><span class="num-badge">11</span> SECTION 11 — CONTACT</h2>
+      <p>For questions, feedback or concerns regarding these Terms of Service, users may contact:</p>
+      <p style="color:#fff; font-weight:800; font-size:1.05rem; margin-top:6px;">Mohammad Shahzad Maruf</p>
+      <a class="email-link" href="mailto:mohammadshahzadmaruf@gmail.com">mohammadshahzadmaruf@gmail.com</a>
+    </div>
+
+    <!-- ==========================================
+         ABOUT US
+         ========================================== -->
+    <div id="about-us" class="section-divider">ABOUT US</div>
+
+    <div class="card">
+      <p>UNO No Marcy Score Tracker is a simple, fast and privacy-focused score tracking application designed for UNO No Mercy players, friends and tabletop gaming groups.</p>
+      <p>The purpose of this app is to make match score tracking easier, faster and more organized. Instead of manually writing scores or maintaining separate notes, players can record their matches directly inside the app and easily review their performance over time.</p>
+      <p>The app allows users to record matches, enter player points, automatically determine player positions, review daily performance, check weekly and monthly rankings, compare scores and view complete match history.</p>
+      <p>The application is designed with a local-first approach. Core score-tracking data is stored locally on the user's device rather than being stored in a remote account or shared database.</p>
+      <p>No account or registration is required for the core score-tracking functionality.</p>
+    </div>
+
+    <footer>
+      &copy; UNO No Marcy Score Tracker &bull; Created by Mohammad Shahzad Maruf
+    </footer>
+  </div>
+</body>
+  </html>
